@@ -14,6 +14,7 @@ const mysqlConnection = mysql.createConnection({
     database: process.env.DATABASE,
     password: process.env.PASSWORD,
     multipleStatements: true,
+
     ssl: {
         "rejectUnauthorized": this.host === "localhost"
     }
